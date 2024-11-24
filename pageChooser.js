@@ -1,9 +1,11 @@
-const chooseContent = document.querySelectorAll('.chooseContent');
+const selectPage = document.querySelectorAll('.chooseContent');
 const contentFrame = document.getElementById('contentFrame');
 
-chooseContent.forEach(element => {
-  element.addEventListener('click', () => {
-    const page = element.getAttribute('value');
+selectPage.forEach(elem => {
+  elem.addEventListener('click', () => {
+    selectPage.forEach(btn => btn.classList.remove('active'));
+    elem.classList.add('active');
+    const page = elem.getAttribute('value');
     contentFrame.src = page;
   });
 });

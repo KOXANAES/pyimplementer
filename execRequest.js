@@ -1,5 +1,5 @@
 document.getElementById('pyCodeForm').addEventListener('submit', (e) => {
-  event.preventDefault();
+  e.preventDefault();
   const code = document.getElementById('pyCodeForm__input').value;
   fetch('http://localhost:5005/execute', {
     method: 'POST',
