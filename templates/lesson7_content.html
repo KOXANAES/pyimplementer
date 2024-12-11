@@ -1,0 +1,142 @@
+
+    <p class="content__header__lesson">Теория</p>
+    <p class="content__subheader">Язык программирования Python</p>
+    <p class="content__subheader__theme">1. Команда вывода</p>
+        <p class="content__info">
+            Для вывода символов на экран используется функция <code>print</code>. Она выводит символы, заключенные в апострофы или в кавычки:
+            <p class="content__info">
+                <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-1.png') }}" alt=''>
+            </p>
+            После выполнения этой команды происходит автоматический переход на новую строку.
+            Для вывода значения переменной на экран также используется оператор <code>print</code>, но уже без кавычек:
+            <p class="content__info">
+                <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-2.png') }}" alt=''>
+            </p>
+            В Python комментарии создаются с помощью знака <code>#</code>, за которым следует какой-либо описательный текст.
+        </p>
+
+    <p class="content__subheader__theme">2. Понятие типа данных</p>
+        <p class="content__info">
+            Переменная – это величина, которая имеет имя, тип и значение. Значение переменной может изменяться во время выполнения программы.
+            В именах переменных можно использовать латинские буквы (строчные и заглавные буквы различаются), цифры и знак подчеркивания <code>_</code>. 
+            Желательно давать переменным соответствующие имена, чтобы можно было сразу понять, какую роль выполняет та или иная переменная. 
+            Тип переменной в Python определяется автоматически. Он определяет, какой вид информации хранится в переменной. 
+            Основные типы данных в Python:
+            <ul class="content__list">
+                <li><code>int</code>: целые числа</li>
+                <li><code>float</code>: числа с плавающей запятой (при записи вещественных чисел в программе, целую и дробную часть разделяют не запятой, а точкой)</li>
+                <li><code>str</code>: строки (текст)</li>
+                <li><code>bool</code>: логические значения (True или False)</li>
+            </ul>
+         </p>
+         <p class="content__info">
+            <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-3.png') }}" alt=''>
+        </p>
+    <p class="content__subheader__theme">3. Оператор присваивания</p>
+    <p class="content__info">Для присваивания значения переменной используется оператор <code>=</code>.</p>
+    <p class="content__info">
+        <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-4.png') }}" alt=''>
+    </p>
+    <p class="content__subheader__theme">4. Ввод данных</p>
+            <p class="content__info">
+                Для ввода значения переменной используется оператор <code>input</code>:
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-5.png') }}" alt=''>
+                </p>
+                При такой записи введенные данные воспринимаются оператором <code>input</code> как символы, а не числа.
+                Чтобы данные воспринимались как числа, нужно преобразовать символьную строку, которая получена при вводе, в целое число. 
+                Это делается с помощью функции <code>int</code> (от англ. integer – целый):
+            </p>
+            <p class="content__info">
+                <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-6.png') }}" alt=''>
+            </p>
+    <p class="content__subheader__theme">5. Структура программы</p>
+        <p class="content__info">Базовая структура программы на Python может включать в себя следующие элементы:
+            <ul class="content__list">
+                <li>Импорт библиотек (если необходимо)</li>
+                <li>Определение функций (при необходимости)</li>
+                <li>Основной код программы</li>
+            </ul>
+        </p>
+        <p class="content__info">
+            <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-7.png') }}" alt=''>
+        </p>
+    <p class="content__subheader__theme">Организация вычислений</p>
+    <p class="content__subheader__theme">1. Вычисление значения арифметического выражения</p>
+    <p class="content__info">
+        Основные математические операции Python:
+        <ol class="content__list">
+            <li>
+                Сложение 
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-8.png') }}" alt=''>
+               </p>
+            </li>
+            <li>
+                Вычитание
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-9.png') }}" alt=''>
+               </p>
+            </li>
+            <li>
+                Умножение 
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-10.png') }}" alt=''>
+               </p>
+            </li>
+            <li>
+                Деление 
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-11.png') }}" alt=''>
+               </p>
+            </li>
+            <li>
+                Целочисленное деление 
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-12.png') }}" alt=''>
+               </p>
+            </li>
+            <li>
+                Остаток от деления 
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-13.png') }}" alt=''>
+               </p>
+            </li>
+            <li>
+                Возведение в степень 
+                <p class="content__info">
+                    <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-14.png') }}" alt=''>
+               </p>
+            </li>
+        </ol>
+    </p>
+    <p class="content__subheader__theme">2. Использование языка программирования для решения задач</p>
+    <ol class="content__info">
+        <li>
+            Создайте программу, которая выведет результат деления 10 на 3 без округления.
+            <p class="content__info">
+                <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-15.png') }}" alt=''>
+            </p>
+        </li>
+        <li>
+            Создайте программу, которая проверяет, является ли результат деления 10 на 3 ненулевым.
+            <p class="content__info">
+                <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-16.png') }}" alt=''>
+            </p>
+        </li>
+        <li>
+            Напишите программу для вычисления площади треугольника, если известны его длина основания и высота.
+            <p class="content__info">
+                <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-17.png') }}" alt=''>
+            </p>
+        </li>
+    </ol>
+    <p class="content__info">
+        Для упрощения кода можно использовать следующие равносильные записи выражений:
+
+    </p>
+
+    <p class="content__info">
+        <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-18.png') }}" alt=''>
+        <img class='lesson_img' src="{{ url_for('static', filename='assets/images/7-19.png') }}" alt=''> 
+    </p>

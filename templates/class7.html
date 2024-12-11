@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'head.html' %}
+  <title>Class 7</title>
+  <style>
+ 
+</style>
+</head>
+<body>
+  {% include 'header.html' %}
+  <div class='wrapper'>
+    {% include 'sidebar.html' %}
+    <main>
+      <div id="lessonContent" class="hidden">
+        <div class='lesson__content'>
+          <div class="content__wrapper">
+            <div class="content__header">
+                <span>Класс 7</span>
+                <div class="chooseMode_btns_container">
+                  <button class="toggleButton project-btn">Показать практику</button>
+                </div>
+            </div>
+            {% include 'lesson7_content.html' %}
+          </div>
+        </div>
+      </div>
+      <div id="practiceContent">
+        <div class='lesson__content'>
+          <div class="content__wrapper">
+            <div class="content__header">
+                <span>Класс 7</span>
+                <div class="chooseMode_btns_container">
+                  <button class="toggleButtonReturn project-btn">Показать практику</button>
+                </div>
+            </div>
+            {% include 'lesson7_content_practice.html' %}
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include 'pyCodeForm.html' %}
+  </div>
+  {% include 'footer.html' %}
+  <script src="{{ url_for('static', filename='js/pageChooser.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root { 
+  --header-height: 7vh;
+  --color1: rgb(29, 41, 81);
+  --color1Selected: rgb(33, 52, 117);
+  --color2: rgb(184, 181, 10);
+  --color2Selected: rgb(241, 239, 64);
+  --color4: 	rgb(65,64,74);
+}
+.content__wrapper { 
+  overflow: auto;
+  overflow-x: hidden;
+  height: calc(100vh - var(--header-height));
+}
+header { 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  padding-left: 1vw;
+  height: var(--header-height);
+  background-color: var(--color1);
+  color: var(--color2);
+}
+.wrapper {display: flex}
+main { 
+  flex: 5;
+}
+.pyExecMenu { 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+aside { 
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  height: calc(100vh - var(--header-height));
+  background-color: var(--color1);
+}
+aside a { 
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+.chooseContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  color: white; 
+  border-radius: 5px;
+  transition: background-color 0.25s, color 0.25s;
+  cursor: pointer;
+}
+.edu__img { 
+  filter: brightness(300%);
+  margin-right: 15px;
+  width: 30px;
+}
+.chooseContent:hover, .chooseContent.active { 
+  background-color: var(--color2);
+  color: var(--color1);
+}
+.chooseContent:hover .edu__img, .chooseContent.active .edu__img { 
+  filter: brightness(0%);
+}
+.chooseContent:active .edu__img { 
+  filter: brightness(0%);
+}
+
+
+.lesson__content { 
+  color: var(--color1);
+  margin-left: 5%;
+}
+.content__header {
+  margin: 5% 0%; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 45px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--color1);
+}
+.content__header__lesson { 
+  font-size: 40px;
+  font-weight: bold;
+  margin: 1% 0%; 
+}
+.content__subheader { 
+  font-size: 30px;
+  font-weight: bold;
+  padding: 2% 2% 0% 0%;
+}
+.content__subheader__theme { 
+  padding: 1% 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.content__info { 
+  padding: 1% 2% 2% 0%;
+  text-indent: 10px;
+}
+.lesson_img { 
+  width: 250px;
+}
+
+#practiceContent {
+  display: none;
+}
+
+.project-btn {
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--color1);
+  color: white;
+  font-weight: bold;
+  transition: .2s ease;
+}
+.project-btn:hover {
+  background-color: var(--color1Selected);
+}
+
+.footer { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color1);
+  padding: 20px;
+  color: white;
+  height: 20vh;
+  padding: 20px;
+  width: 100%;
+}
+.footer__logo { 
+  text-align: center;
+}
+a { 
+  color: white;
+}

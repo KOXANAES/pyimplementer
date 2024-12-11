@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'head.html' %}
+  <title>Class 6</title>
+</head>
+<body>
+  {% include 'header.html' %}
+  <div class='wrapper'>
+    {% include 'sidebar.html' %}
+    <main>
+      <div class='lesson__content'>
+        <h2>Класс 6</h2>
+        {% include 'pyCodeForm.html' %}
+      </div>
+    </main>
+  </div>
+  {% include 'footer.html' %}
+  <script src="{{ url_for('static', filename='js/pageChooser.js') }}"></script>
+</body>
+</html>

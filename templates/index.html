@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="{{url_for('static', filename='style.css')}}">
+  <link rel='icon' href='./assets/lightbulb.png'>
+  <title>pyimplementer</title>
+</head>
+<body>
+  {% include 'header.html' %}
+  <div class='wrapper'>
+    {% include 'sidebar.html' %}
+    <main>
+      <div class="content__wrapper">
+        <p class="content__header">
+          Главная
+        </p>
+        <p class="content__info">
+          Язык программирования Python – это инструмент для создания программ самого разнообразного назначения, доступный даже для новичков. 
+          Данный ресурс поможет вам научиться программировать на языке Python, применяя полученные знания в реальном времени.
+        </p>
+      </div>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/pageChooser.js') }}"></script>
+</body>
+</html>

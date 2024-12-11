@@ -4,10 +4,24 @@ import sys
 import io
 
 app = Flask(__name__)
-CORS(app, resources={r"/execute": {"origins": ["http://localhost:5500", "http://127.0.0.1:5500"]}})
+
+CORS(app, resources={r"/execute": {"origins": ["*"]}})
+
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/class6/')
+def class6():
+    return render_template('class6.html')
+
+@app.route('/class7/')
+def class7():
+    return render_template('class7.html')
+
+@app.route('/class8/')
+def class8():
+    return render_template('class8.html')
 
 @app.route('/execute', methods=['POST'])
 def execute_code():
